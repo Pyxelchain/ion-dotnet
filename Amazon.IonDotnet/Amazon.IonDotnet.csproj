@@ -35,10 +35,4 @@ Updated for .NET 6.0 and C# 10.0 build.</Description>
     <Folder Include="Tree\Impl\" />
     <None Include="../amazon.png" Pack="true" PackagePath="" />
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
 </Project>
