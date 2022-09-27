@@ -1,16 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>net6.0;</TargetFrameworks>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <LangVersion>7.3</LangVersion>
+    <LangVersion>10.0</LangVersion>
     <PackageId>Amazon.IonDotnet</PackageId>
-    <Version>1.2.2</Version>
-    <Authors>amazon-ion</Authors>
-    <Company>Amazon.com</Company>
+    <Version>1.2.3</Version>
+    <Authors>amazon-ion, AngryHound</Authors>
+    <Company>Pyxelchain Software</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <RepositoryUrl>https://github.com/amzn/ion-dotnet</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Pyxelchain/ion-dotnet</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Description>A .NET implementation of Amazon Ion. http://amzn.github.io/ion-docs/</Description>
+    <Description>A .NET implementation of Amazon Ion. http://amzn.github.io/ion-docs/
+Updated for .NET 6.0 and C# 10.0 build.</Description>
     <PackageTags>ion;amazon;json;serialization;parser</PackageTags>
     <PackageIcon>amazon.png</PackageIcon>
     <PackageIconUrl>https://avatars0.githubusercontent.com/u/8594673?s=200&amp;v=4</PackageIconUrl>
@@ -19,6 +20,10 @@
     <AssemblyOriginatorKeyFile>..\public.snk</AssemblyOriginatorKeyFile>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
     <NoWarn>$(NoWarn),1591</NoWarn>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PackageReleaseNotes>Upgraded .csproj files to latest versions and retargeted to .NET 6.0 with C# 10.0 language support</PackageReleaseNotes>
+    <AnalysisLevel>latest-all</AnalysisLevel>
   </PropertyGroup>
   <PropertyGroup Condition="'$(BuildingInsideVisualStudio)' != 'true'">
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
